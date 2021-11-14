@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+//     // - Користувач вводить або має два числа.
+//     // Потрібно знайти та вивести максимальне число з тих двох .
+//     // Також потрібно врахувати коли введені рівні числа.
+// let firstNum = prompt('Введіть 1ше число');
+// let secondNum = prompt('Введіть 2ге число');
+// if (firstNum >= secondNum) {
+//     document.write(firstNum);
+// }
+// else {
+//     document.write(secondNum);
+// }
+
+//         // - У першому під'їзді квартири з 1 до 20. У другому з 21 по 48. У третьому з 49 по 90.
+//         // Користувач вводить номер квартири просто в змінні або через prompt('') .
+//         // Програма повинна зазначити, в якому під'їзді знаходиться дана квартира.
+//     let flatNum = +prompt('Enter flat number:');
+//     if (flatNum >= 1 && flatNum <= 20) {
+//      document.write('It is a first entrance.');
+// }
+//    else if (flatNum >= 21 && flatNum <= 48) {
+//     document.write('It is a second entrance.');
+// }
+//    else if (flatNum >= 49 && flatNum <= 90) {
+//     document.write('It is a third entrance.');
+// }
+//    else {
+//     document.write('There is no such flat in this building.')
+// }
+
+//     //  - Ми маємо змінну number в яку користувач задає числове значення,
+//     //  якщо змінна рівна 10 вивести повідомлення ВІРНО, якщо змінна не рівна 10 - тоді НЕВІРНО
+// let number = +prompt('Введіть числове значення:');
+// if (number === 10) {
+//     document.write('Вірно!');
+// }
+// else {
+//     document.write('Не вірно!');
+// }
+
+// - Ми маємо змінну x в яку користувач задає  значення,  якщо в змінну записане число, вивести 1,
+// якщо в змінну записали стрінгу вивести 2, якщо булеве значення - 3, якщо об'єкт або масив - 4.
+// якщо в змінну записали щось інше, спрацьовує else
+
+let x = '';
+let xType = typeof x; // Задаєм для хType значення типу х і далі перевіряємо до якого типу відносться змінна
+
+if (xType === 'number'){
+    document.write('1');
+}
+else if (xType === 'string'){
+    document.write('2');
+}
+else if (xType === 'boolean'){
+    document.write('3');
+}
+else if (xType === 'object'|| xType === 'arr') {
+    document.write('4');
+}
+else {
+    document.write('Check your writing. ')
+}
+
+
+
+
+  //  // - Задача-гра "чи ми йдемо сьогодні в OKTEN на навчання?".
+  //  // Змінна, яка характеризує температуру. Якщо температура від +10 до +22 вивести повідомлення що ми йдемо ВЧИТИСЯ .
+  //  // Якщо інша темпаретура, тоді виводимо повідомлення що сидимо вдома і вчимося ОНЛАЙН
+// let temperature = +prompt('Введіть температуру повітря:');
+// if (temperature >= 10 && temperature <= 22) {
+//     document.write('Йдемо в OKTEN Вчитися! І ніякої пощади!');
+// }
+// else if (temperature < 10 || temperature > 22) {
+//     document.write('Сидіть вдома і не висовуйтесь! Практичні ОНЛАЙН!');
+// }
+
+//     // - За допомогою switch case - реалізувати гру - вікторину, де ми вводимо число від 1 до 5. І взалежності від введеного
+//     // числа нам дається приз. (Авто, Мото, Телефон, і т.д ) і якщо число не підходить тоді  вивести Повідомлення - що число не вірне ... .
+// let quiz = +prompt('Enter a number from 1 to 5');
+// switch (quiz) {
+//     case 1:
+//         console.log('Car');
+//         break;
+//     case 2:
+//         console.log('Motorcycle');
+//         break;
+//     case 3:
+//         console.log('Bicycle');
+//         break;
+//     case 4:
+//         console.log('Smartphone');
+//         break;
+//     case 5:
+//         console.log('Memory Stick');
+//         break;
+//     default:
+//         console.log('Go home! Bye!')
+// }
+</script>
+</body>
+</html>
