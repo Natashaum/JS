@@ -141,15 +141,14 @@
 
 // 9 - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit.
 //     limit - аргумент, який характеризує кінцеве значення діапазону.
-// function randomLimit(arr, limit) {
-//     for (let i = 0; i < arr.length; i++) {
+// function randomLimit(arr, size, limit) {
+//     for (let i = 0; i < size; i++) {
 //         arr[i] = Math.round(Math.random() * limit);
 //     }
 //     return arr;
 // }
 //
-// let arr = [0, 0, 0, 0, 0];
-// console.log(randomLimit(arr, 10));
+// console.log(randomLimit([], 10, 50));
 
 // 10 - Функція приймає масив та робить з нього новий масив в зворотньому порядку. [1,2,3] -> [3, 2, 1].
 // function reverse (arr) {
@@ -161,3 +160,14 @@
 // }
 // let arr = [4, 88, 33, 15, 32];
 // console.log (reverse(arr));
+
+// 9 - створити функцію яка заповнює масив рандомними числами в діапазоні від 0 до limit.
+//     limit - аргумент, який характеризує кінцеве значення діапазону.
+function randomLimit(arr, size, limit) {
+    for (let i = 0; i < size; i++) {
+        arr[i] = Math.round(Math.random() * limit);
+    }
+    return arr;
+}
+
+console.log(randomLimit([], 20, 100));
