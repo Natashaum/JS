@@ -9,7 +9,7 @@
 // // 2 - створити функцію яка обчислює та повертає площу кола з радіусом r
 // // S = π ⋅ r 2.
 // function circle_area (p, r){
-//     let result = p * r * 2;
+//     let result = p * r ** 2;
 //     console.log(result);
 // }
 // circle_area (3.14, 3);
