@@ -120,14 +120,6 @@
 // 8 - створити функцію яка заповнює масив рандомними числами
 //     (цей код генерує рандомні числа в діапазоні від 0 до 100 - Math.round(Math.random()*100))
 //     та виводить його.
-// function random(arr) {
-//     for (let i = 0; i < arr.length; i++) {
-//         arr[i] = Math.round(Math.random() * 100);
-//     }
-//     return arr;
-// }
-// let arr = [4, 88, 33, 15, 32]; // вказуємо любі числа - воно перерзаписує рандомними
-// console.log(random(arr));
 
 // function random(length) {
 //     let arr = [];
