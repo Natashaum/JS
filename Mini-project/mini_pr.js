@@ -4,14 +4,25 @@
 // 3 Добавить каждому блоку кнопку/ссылку , при клике на которую происходит переход на страницу user-details.html,
 //   которая имеет детальную информацию про объект на который кликнули
 
-
+let wrap = document.createElement('div');
+wrap.classList.add('wrap');
+document.body.append(wrap);
 
 fetch('https://jsonplaceholder.typicode.com/users')
     .then(response => {
         return response.json();
     })
-    .then(users =>{
+    .then(users => {
+       let currentRow;
+       let userNumber = 0;
+
         for (const user of users) {
+            if(userNumber == 0){
+                currentRow = document.createElement('div');
+                currentRow.classList.add('container-row');
+                wrap.append(currentRow);
+            }
+
             let div = document.createElement('div');
             div.classList.add('user');
             div.innerText = `user id = ${user.id};  user name - ${user.name}`;
@@ -21,17 +32,10 @@ fetch('https://jsonplaceholder.typicode.com/users')
             link.setAttribute('href', `user-details.html?id=${user.id}`);
             div.appendChild(link);
 
-            document.body.append(div);
+            currentRow.append(div);
+            userNumber = userNumber == 0 ? 1 : 0;
         }
     });
-
-
-
-
-
-// На странице post-details.html:
-// 7 Вывести всю, без исключения, информацию про объект post на кнопку/ссылку которого был совершен клик ранее.
-// 8 Ниже информации про пост, вывести все комментарии текущего поста (эндпоинт для получения информации - https://jsonplaceholder.typicode.com/posts/POST_ID/comments)
 
 
 // Стилизация проекта -
